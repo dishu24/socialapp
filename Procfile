@@ -1,1 +1,1 @@
-web : waitress-serve --port=8000 socialapp.wsgi:application
+web : gunicorn socialapp.wsgi:application --log-file - 
